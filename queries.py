@@ -5,9 +5,6 @@ import boto3
 # Set the access keys
 from boto3.dynamodb.conditions import Key
 
-access_key_id = 'AKIA5WVQT66QRM47OT7N'
-secret_access_key = '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'
-
 dynamodb = boto3.resource('dynamodb', region_name='ap-northeast-1', aws_access_key_id=access_key_id,
                           aws_secret_access_key=secret_access_key)
 dynamoTable = dynamodb.Table('BC_Tweets')
