@@ -1,0 +1,13 @@
+Main Table:
+Primary Key:
+  - Partition Key: User_name
+  - Sort Key: num_followers
+
+Special Case 1: (for query 2)
+GSI:
+  - Partition Key: location
+
+Special Case 2 (for query 5)
+GSI:
+  - Partition Key: Tweet text (subject to change)
+  - Sort Key: Tag
